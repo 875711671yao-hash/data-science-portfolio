@@ -27,6 +27,11 @@ I am especially interested in applying these skills to environmental and public-
 
 ### When does Beijing breathe easiest?
 
+> **At a glance**  
+> **Purpose:** measure how PM2.5 varies across seasons, hours and stations, and test how much weather explains.  
+> **Main finding:** winter nights are worst, and the 2016/17 winter returned to 2013/14 levels; weather and calendar explain just over half (R² 0.56).  
+> **Limitation:** one city, observational data — associations rather than causal effects, with no emissions or traffic data.
+
 **Research question.** How does fine particulate matter (PM2.5) in Beijing vary across seasons,
 hours and monitoring stations — and how much of that variation can the weather explain?
 
@@ -51,6 +56,10 @@ A random forest using weather, calendar and station features reaches **R² = 0.5
 year (RMSE 58 µg/m³) — useful, but a reminder that emissions, not weather, remain the main lever.
 The full analysis, including the data-quality checks, the station comparison and the model
 diagnostics, is in the repository.
+
+**Limitation.** This is an observational study of one city, so it shows associations rather than
+causal effects. The model uses same-hour weather rather than a forecast and contains no traffic,
+heating or industrial emissions data, which is why roughly 44% of the variance remains unexplained.
 
 **Status:** Completed
 
