@@ -41,11 +41,12 @@ hours and monitoring stations — and how much of that variation can the weather
 season (15 November – 15 March); the dotted line is the four-year mean (80 µg/m³). Winter peaks do
 not decline over the four years.*
 
-**What the data show.** Across 420,768 hourly records from 12 stations, PM2.5 is strongly seasonal
-(December 105 µg/m³ vs August 54 µg/m³), peaks on winter nights rather than at the morning rush
-hour, and differs by about 20 µg/m³ between the cleanest and dirtiest stations. Wind is the
-sharpest weather gradient: the median is 79 µg/m³ in calm hours and 13 µg/m³ when wind exceeds
-4 m/s.
+**What the data show.** Across 420,768 hourly records from 12 stations, PM2.5 is strongly seasonal:
+December averages 105 µg/m³ against 54 µg/m³ in August (about 2×), while the full winter
+(December–February) averages 95 µg/m³ against 65 µg/m³ in summer (about 1.5×). It peaks on winter
+nights rather than at the morning rush hour, and differs by about 20 µg/m³ between the cleanest and
+dirtiest stations. Wind is the sharpest weather gradient: the median is 79 µg/m³ in calm hours and
+13 µg/m³ when wind exceeds 4 m/s.
 
 ![PM2.5 by wind speed, median and interquartile range](assets/pm25_wind.png)
 
@@ -57,9 +58,11 @@ year (RMSE 58 µg/m³) — useful, but a reminder that emissions, not weather, r
 The full analysis, including the data-quality checks, the station comparison and the model
 diagnostics, is in the repository.
 
-**Limitation.** This is an observational study of one city, so it shows associations rather than
-causal effects. The model uses same-hour weather rather than a forecast and contains no traffic,
-heating or industrial emissions data, which is why roughly 44% of the variance remains unexplained.
+**Limitation.** There are two distinct limits. Statistically, the model reaches R² = 0.56, so
+weather and calendar leave roughly 44% of the variance unexplained — emissions, not weather,
+remain the main lever. Substantively, this is an observational single-city study: it shows
+associations rather than causal effects, uses same-hour weather rather than a forecast, and has no
+traffic, heating or industrial emissions data.
 
 **Status:** Completed
 
